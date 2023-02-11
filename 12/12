@@ -1,0 +1,30 @@
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input n > 3:");
+        int n = sc.nextInt();
+        while(n <= 3){
+            System.out.println("Wrong input!\nTry again!");
+            n = sc.nextInt();
+        }
+        int arr[] = new int[n];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = (int)(Math.random()*n);
+        }
+        int count = 0;
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+            if(arr[i] % 2 == 0){
+                count++;
+            }
+        }
+        System.out.println();
+        if(count > 0){
+            int arr_2[] = new int[count];
+            int k = 0;
+            for(int i = 0; i < arr.length; i++){
+                if(arr[i] % 2 == 0){
+                    arr_2[k] = arr[i];
+                    System.out.print(arr_2[k] + " ");
+                    k++;
+                }
+            }
+        }
