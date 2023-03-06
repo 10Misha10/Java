@@ -1,8 +1,0 @@
-        int n = (int)(Math.random()*28800);
-        System.out.println("n = " + n);
-        if(n < 1){
-            System.out.println("Осталось менее часа.");
-        }
-        else{
-            System.out.println("Остался(ось) " + Math.round(n/3600) + " час(а).");
-        }
